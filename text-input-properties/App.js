@@ -67,7 +67,19 @@ const HanleInputExample = () => {
           onChangeText = {(value) => setPassword(value)}
         /> 
         
+        
       </View>
+      <View style={styles.inputContainer}>
+            <Ionicons name="id-card-outline" size={20} color="gray" style={styles.icon}/>
+        <TextInput
+          style = {styles.input}
+          placeholder = "Full Name"
+          value = {fname  }
+          maxLength={30}
+        /> 
+      </View>
+      <Text>This field is non editable</Text>
+
         <Button
           title="Register"
           onPress={handleSubmit}
